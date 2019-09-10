@@ -1,0 +1,14 @@
+"eng":{
+  "n1":{
+    "title":"Release dates:",
+    "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Ladybug</span><br><span style='font-size:16px;'>Marinette gets expelled from school, but there's another much bigger problem: she has to face a sentimonster that looks like Ladybug!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>10th September - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Startrain</span><br><span style='font-size:16px;'>Ladybug & Cat Noir face Startrain, the akumatized mother of Max. Our heroes will need help to stop her!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>16th September - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Feast</span><br><span style='font-size:16px;'>When Master Fu's past catches him up, he reclaims the Miraculouses of Marinette and Adrien to protect them...<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>17th September - 5:30pm (EST)</span></div>"
+  },
+  "n2":{
+    "title":"Spoilers:",
+    "desc":"<div class='spoilersHere'></div>"
+  },
+  "n3":{
+    "title":"New Episodes Released:",
+    "desc":"<a style='text-decoration:none;color:black' href='MLwatch.html?v=drive_1pNqeclAmRdwXYAADXnL3n4UMASORR0_4'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b18.jpg'><br>Ikari Gozen (High Quality)</a><br><a style='text-decoration:none;color:black' href='MLwatch.html?v=drive_10XmiiQnSNx5kwP-U8S188GaR_LVKJSw7'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b11.jpg'><br>Desperada</a><br><a style='text-decoration:none;color:black' href='MLwatch.html?v=drive_10EJH0zFnlq4fv3DgVCmBgkLGrWyG8V6A'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b5.jpg'><br>Reflekdoll</a>"
+  }
+}
