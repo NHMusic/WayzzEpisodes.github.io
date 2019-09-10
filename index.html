@@ -213,9 +213,13 @@ scJsHost+
 </script>
 <script>
 localStorage['possible']='ok';
+// localStorage['lang']='eng';
+// var lang=localStorage['lang'];
+var lang='eng';
 var g=function(p){return document.querySelector(p);}
 g('.select-css').style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
-$.getJSON("engnews.json", function(json) {
+$.getJSON("news.json", function(jsonfull) {
+  var json=eval('jsonfull.'+lang);
   for (var i=1;i<Object.keys(json).length+1;i++){
     var title=eval('json.n'+i+'.title'),
     desc=eval('json.n'+i+'.desc');
