@@ -182,6 +182,9 @@ hr{
   <select class="seasonChoose select-css">
     <option value="choose">Choose Season:</option>
   </select>
+  <select class="language select-css">
+    <option value="choose">English</option>
+  </select>
   <h1 class="load" style="color:#000088;font-family: 'Varela Round', sans-serif;font-size:35px;">Loading video data...<br>Please wait up to 10 seconds!</h1>
   <div class="ytcont"></div><br>
 </div>
@@ -213,7 +216,9 @@ Webpage Stats</a>
 // var lang=localStorage['lang'];
 var lang='eng';
 var g=function(p){return document.querySelector(p);}
-g('.select-css').style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+for(var i=0;i<document.querySelectorAll('.select-css').length;i++){
+    document.querySelectorAll('.select-css')[i].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+}
 $.getJSON("news.json", function(jsonfull) {
   var json=eval('jsonfull.'+lang);
   for (var i=1;i<Object.keys(json).length+1;i++){
