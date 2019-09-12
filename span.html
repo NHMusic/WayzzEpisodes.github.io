@@ -390,7 +390,7 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
       isMobile = true;
   }
   function onresize(){
-    gA('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+    document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
     if(window.innerWidth<1017){
       for(var o=0;o<document.querySelectorAll('#ytThumbs').length;o++){
         if(localStorage['MLtab']){
