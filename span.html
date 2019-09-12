@@ -213,9 +213,8 @@ Webpage Stats</a>
 // var lang=localStorage['lang'];
 var lang='eng';
 var g=function(p){return document.querySelector(p);}
-for(var i=0;i<document.querySelectorAll('.select-css').length;i++){
-    document.querySelectorAll('.select-css')[i].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
-}
+document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+
 $.getJSON("news.json", function(jsonfull) {
   var json=eval('jsonfull.'+lang);
   for (var i=1;i<Object.keys(json).length+1;i++){
