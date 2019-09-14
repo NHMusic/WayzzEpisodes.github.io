@@ -171,10 +171,10 @@ hr{
 <div style="background:white;">
 <ul>
 <li><a class="tabBtn WWlogo" href="#"><img style="vertical-align:middle;" height="50" src="WWlogo.png"></a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
-<li><a class="tabBtn" href="#"><select class="langChoose select-css"><option value="eng">English</option><option value="es">European Spanish</option><option value="esla">Latin Spanish</option></select></a></li>
+<li><a class="tabBtn gotoNewsTab" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
+<li><a class="tabBtn gotoEpisodesTab" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
+<li><a class="tabBtn gotoAboutTab" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
+<li><a class="tabBtn" href="#"><select class="langChoose select-css"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option></select></a></li>
 </ul>
 </div>
 <div class="newsTab tabML"><h1 class="newsTit"><u>News</u></h1><div class="newsTabnews"></div></div>
@@ -213,6 +213,11 @@ var g=function(p){return document.querySelector(p);}
 document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
 if(!localStorage['MLlanguage']){localStorage['MLlanguage']='eng'}
 document.querySelector('.langChoose').value=localStorage['MLlanguage'];
+if(localStorage['MLlanguage'].includes('es')){
+	g('.gotoNewsTab').innerHTML='Noticias';
+	g('.gotoEpisodesTab').innerHTML='Episodios';
+	g('.gotoAboutTab').innerHTML='Sobre Nosotros';
+}
 document.querySelector('.langChoose').onchange=function(){
   localStorage['MLlanguage']=document.querySelector('.langChoose').value;
   window.location.reload();
