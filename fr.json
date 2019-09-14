@@ -24,12 +24,27 @@
     },
     "e5":{
       "id":"drive_1FCsnyhLwTNhkCh-yt_ybPJmaGA06jVJE/",
-      "name":"Chronogirl", "dur":"20:49",
+      "name":"Chronogirl",
       "thumb":""
     },
     "e6":{
       "id":"drive_1KOnpHgFUFOXGoZlr92sHhhPdEYKuAhqa",
-      "name":"M. Pigeon", "dur":"21:39",
+      "name":"M. Pigeon",
+      "thumb":""
+    },
+    "e7":{
+      "id":"drive_1Ax3Q3AMWhs-Yh0p0XIXJMiL6FYzKiwNZ",
+      "name":"Le Dessinateur",
+      "thumb":""
+    },
+    "e8":{
+      "id":"drive_1ZIpcwYkHo_wnHaWsJjrR5gASU80m-C_w",
+      "name":"Rogercop", "dur":"21:39",
+      "thumb":""
+    },
+    "e9":{
+      "id":"drive_1GHgahk7xa9X7Q2vqC6BKYRbj8TRpAIJP",
+      "name":"L\'Imposteur", "dur":"21:39",
       "thumb":""
     }
   }
