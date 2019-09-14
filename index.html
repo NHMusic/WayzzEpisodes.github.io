@@ -295,23 +295,26 @@ document.querySelector('.seasonChoose').onchange=function(){
       document.querySelectorAll("#ytThumbs")[i].style.display='none';
     }
   }
-  localStorage['MLtab']=document.querySelector('.seasonChoose').value;
   switch(document.querySelector('.seasonChoose').value){
     case 'S1':
       document.querySelectorAll("#ytThumbs")[0].style.display='flex';
       document.querySelectorAll("#ytThumbs")[0].style.flexWrap='wrap';
+      localStorage['MLtab']=document.querySelector('.seasonChoose').value;
       break;
     case 'S2':
       document.querySelectorAll("#ytThumbs")[1].style.display='flex';
       document.querySelectorAll("#ytThumbs")[1].style.flexWrap='wrap';
+      localStorage['MLtab']=document.querySelector('.seasonChoose').value;
       break;
     case 'S3':
       document.querySelectorAll("#ytThumbs")[2].style.display='flex';
       document.querySelectorAll("#ytThumbs")[2].style.flexWrap='wrap';
+      localStorage['MLtab']=document.querySelector('.seasonChoose').value;
       break;
     case 'S4':
       document.querySelectorAll("#ytThumbs")[3].style.display='flex';
       document.querySelectorAll("#ytThumbs")[3].style.flexWrap='wrap';
+      localStorage['MLtab']=document.querySelector('.seasonChoose').value;
       break;
     default:
       break;
