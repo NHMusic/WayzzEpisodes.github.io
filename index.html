@@ -174,7 +174,7 @@ hr{
 <li><a class="tabBtn gotoNewsTab" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
 <li><a class="tabBtn gotoEpisodesTab" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
 <li><a class="tabBtn gotoAboutTab" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
-<li><a class="tabBtn" href="#"><select class="langChoose select-css"><img class="langImg" width="30" style="vertical-align:center;"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option><option value="fr">Français</option></select></a></li>
+<li><a class="tabBtn" href="#"><img class="langImg" width="30" style="vertical-align:center;"><select class="langChoose select-css"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option><option value="fr">Français</option></select></a></li>
 </ul>
 </div>
 <div class="newsTab tabML"><h1 class="newsTit"><u>News</u></h1><div class="newsTabnews"></div></div>
@@ -209,19 +209,19 @@ var g=function(p){return document.querySelector(p);}
 document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
 if(!localStorage['MLlanguage']){localStorage['MLlanguage']='eng'}
 document.querySelector('.langChoose').value=localStorage['MLlanguage'];
-// g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg';
+g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg';
 if(localStorage['MLlanguage'].includes('es')){
 	g('.gotoNewsTab').innerHTML='Noticias';
 	g('.gotoEpisodesTab').innerHTML='Episodios';
 	g('.gotoAboutTab').innerHTML='Sobre Nosotros';
-// 	if(localStorage['MLlanguage'].includes('la')){g('.langImg').src='https://miraculousladybug.to/flags/flag-es.jpg';}else{
-// 	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e6.svg';}
+	if(localStorage['MLlanguage'].includes('la')){g('.langImg').src='https://miraculousladybug.to/flags/flag-es.jpg';}else{
+	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e6.svg';}
 }
 if(localStorage['MLlanguage'].includes('fr')){
 	g('.gotoNewsTab').innerHTML='Nouvelles';
 	g('.gotoEpisodesTab').innerHTML='Épisodes';
 	g('.gotoAboutTab').innerHTML='À Propos de Nous';
-// 	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg';
+	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg';
 }
 document.querySelector('.langChoose').onchange=function(){
   localStorage['MLlanguage']=document.querySelector('.langChoose').value;
