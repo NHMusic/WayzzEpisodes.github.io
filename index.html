@@ -352,11 +352,7 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
     for (var l=1;l<eval('Object.keys(json.s'+i+').length+1');l++){
       var epName=eval('json.s'+i+'.e'+l+'.name').replace("'","\'"),
       epUrl=eval('json.s'+i+'.e'+l+'.id'),
-      epThumb=eval('json.s'+i+'.e'+l+'.thumb'),
-      epDur=eval('json.s'+i+'.e'+l+'.dur');
-      if(epDur==''){
-        epDur='Processing...';
-      }
+      epThumb=eval('json.s'+i+'.e'+l+'.thumb');
       if(epThumb==''){
         try{
           if(eval('images'+i+'['+(l-1).toString()+']')!=''&&eval('images'+i+'['+(l-1).toString()+']')!='undefined'){
@@ -396,7 +392,7 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
       img.classList+=' ytthumb';
       a2.appendChild(img);
       a2.appendChild(imgCont);
-      img.innerHTML+='<div class="vidDuration durationText" style="z-index:800;position:absolute;top:0;right:0;border-radius:0 10px 0 10px;padding:5px; background:#aaa; color white;pointer-events:none;border-bottom:1px solid black;border-left:1px solid black;">' + epDur + '<br>' +'</div>';
+//       img.innerHTML+='<div class="vidDuration durationText" style="z-index:800;position:absolute;top:0;right:0;border-radius:0 10px 0 10px;padding:5px; background:#aaa; color white;pointer-events:none;border-bottom:1px solid black;border-left:1px solid black;">' + epDur + '<br>' +'</div>';
       imgCont.style.marginTop='-4px';
       imgCont.innerHTML+='<a style="text-decoration:none" href="MLwatch.html?v='+epUrl+'"><div class="vidDuration titleText" style="background:white;color:#222;font-size:25px;width:100%;padding:10px;"><span style="font-family: \'Acme\', sans-serif;">'+epName+'</span><!--<br>Season '+i+' Episode '+l+'<br>--></div></a>';
       document.querySelectorAll("#ytThumbs")[i-1].innerHTML+='<div class="ytlist" style="font-family: \'Baloo Bhai\',cursive;color:#222; padding-top:5px;padding-bottom:5px;width:366.666px;text-align:left;margin-left:40px;margin-top:10px;">'+nodeToString(a2)+'</div>';
@@ -444,10 +440,10 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
         document.querySelectorAll('.ytlist')[o].style.width='100%';
         document.querySelectorAll('.ytlist')[o].style.height='auto';
       }
-      for(var o=0;o<document.querySelectorAll('.durationText').length;o++){
-        document.querySelectorAll('.durationText')[o].style.fontSize=(0.02196193265*window.innerHeight).toString()+'px';
-        document.querySelectorAll('.durationText')[o].style.display='none';
-      }
+//       for(var o=0;o<document.querySelectorAll('.durationText').length;o++){
+//         document.querySelectorAll('.durationText')[o].style.fontSize=(0.02196193265*window.innerHeight).toString()+'px';
+//         document.querySelectorAll('.durationText')[o].style.display='none';
+//       }
       for(var l=0;l<document.querySelectorAll('.titleText').length;l++){
         document.querySelectorAll('.titleText')[l].style.fontSize=(0.02596193265*window.innerHeight).toString()+'px';
         document.querySelectorAll('.titleText')[l].style.width='100%';
