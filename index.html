@@ -171,10 +171,10 @@ hr{
 <div style="background:white;">
 <ul>
 <li><a class="tabBtn WWlogo" href="#"><img style="vertical-align:middle;" height="50" src="WWlogo.png"></a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
-<li><a class="tabBtn" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
-<!--<li><a href="#">Contact</a></li>-->
+<li><a class="tabBtn gotoNewsTab" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
+<li><a class="tabBtn gotoEpisodesTab" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
+<li><a class="tabBtn gotoAboutTab" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
+<li><a class="tabBtn" href="#"><select class="langChoose select-css"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option></select></a></li>
 </ul>
 </div>
 <div class="newsTab tabML"><h1 class="newsTit"><u>News</u></h1><div class="newsTabnews"></div></div>
@@ -209,15 +209,22 @@ Webpage Stats</a>
 	scJsHost+
 	"statcounter.com/counter/counter.js'></"+"script>");
 	localStorage['possible']='ok';
-// localStorage['lang']='eng';
-// var lang=localStorage['lang'];
-var lang='eng';
 var g=function(p){return document.querySelector(p);}
-for(var i=0;i<document.querySelectorAll('.select-css').length;i++){
-    document.querySelectorAll('.select-css')[i].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+if(!localStorage['MLlanguage']){localStorage['MLlanguage']='eng'}
+document.querySelector('.langChoose').value=localStorage['MLlanguage'];
+if(localStorage['MLlanguage'].includes('es')){
+	g('.gotoNewsTab').innerHTML='Noticias';
+	g('.gotoEpisodesTab').innerHTML='Episodios';
+	g('.gotoAboutTab').innerHTML='Sobre Nosotros';
 }
+document.querySelector('.langChoose').onchange=function(){
+  localStorage['MLlanguage']=document.querySelector('.langChoose').value;
+  localStorage['MLtab']='S1';
+  window.location.reload();
+};
 $.getJSON("news.json", function(jsonfull) {
-  var json=eval('jsonfull.'+lang);
+  var json=eval('jsonfull.'+localStorage['MLlanguage']);
   for (var i=1;i<Object.keys(json).length+1;i++){
     var title=eval('json.n'+i+'.title'),
     desc=eval('json.n'+i+'.desc');
@@ -268,7 +275,7 @@ if(localStorage['currTab']){
   changeTab();
 }else{
   localStorage['currTab']='Episodes';
-  g('.newsTab').style.display='block';
+  changeTab();
 }
 var useOld=true;
 function nodeToString ( node ) {
@@ -306,7 +313,7 @@ document.querySelector('.seasonChoose').onchange=function(){
       break;
   }
 }
-$.getJSON("eng.json", function(json) {
+$.getJSON(localStorage['MLlanguage']+".json", function(json) {
   var images1=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.png','img/7.jpg','img/8.png','img/9.png','img/10.jpg','img/11.png','img/12.jpg','img/13.jpg','img/14.png','img/15.jpg','img/16.jpg','img/17.png','img/18.png','img/19.jpg','img/20.jpg','img/21.jpg','img/22.jpg','img/23.png','img/23.png','img/25.png','img/26.jpg','img/27.png'];
   var images2=['img/a1.jpg','img/a2.jpg','img/a3.jpg','img/a4.png','img/a5.jpg','img/a6.jpg','img/a7.jpg','img/a8.jpg','img/a9.jpg','img/a10.jpg','img/a11.jpg','img/a12.jpg','img/a13.jpg','img/a14.png','img/a15.png','img/a16.jpg','img/a17.jpg','img/a18.jpg','img/a19.jpg','img/a20.png','img/a21.jpg','img/a22.jpg','img/a23.png','img/a24.jpg','img/a25.jpg'];
   var images3=['img/b1.jpg','img/b2.jpg','img/b3.png','img/b4.jpg','img/b5.jpg','img/b6.jpg','img/b7.jpg','img/b8.jpg','img/b9.png','img/b10.jpg','img/b11.jpg','img/b12.jpg','img/b13.jpg','img/b14.jpg','img/b15.jpg','img/b16.png','img/b17.jpg','img/b18.jpg','img/b19.jpg','img/b20.png','img/b21.jpg','img/b22.jpg','img/b23.jpg','img/b24.png','img/b25.jpg'];
@@ -316,7 +323,12 @@ $.getJSON("eng.json", function(json) {
   localStorage['MLeps']=''
   localStorage['MLepNames']=''
   for (var i=1;i<Object.keys(json).length+1;i++){
-    document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Season '+i+'</option>';
+    if(localStorage['MLlanguage'].includes('es')){
+    	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Temporada '+i+'</option>';
+    }
+    if(localStorage['MLlanguage'].includes('en')){
+    	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Season '+i+'</option>';
+    }
     document.querySelector('.ytcont').innerHTML+='<div style="width:80%;justify-content:center;z-index:-1;margin:0;margin-left:9%;margin-top:10px;" id="ytThumbs"></div>';
     for (var l=1;l<eval('Object.keys(json.s'+i+').length+1');l++){
       var epName=eval('json.s'+i+'.e'+l+'.name').replace("'","\'"),
@@ -389,7 +401,7 @@ $.getJSON("eng.json", function(json) {
       isMobile = true;
   }
   function onresize(){
-    g('.select-css').style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
+    document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
     if(window.innerWidth<1017){
       for(var o=0;o<document.querySelectorAll('#ytThumbs').length;o++){
         if(localStorage['MLtab']){
@@ -466,7 +478,6 @@ $.getJSON("eng.json", function(json) {
   }
   onresize();
   window.addEventListener('resize', onresize);
-  // g('footer').style.display='block';
 });
 </script>
 </body>
