@@ -19,7 +19,7 @@
       "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Startrain</span><br><span style='font-size:16px;'>Ladybug & Cat Noir combaten contra Startrain, la versión akumatizada de la madre de Max. Nuestros héroes necesitarán ayuda para derrotarla!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>16 de Septiembre - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Festín</span><br><span style='font-size:16px;'>Quando Master Fu se acuerda de su pasado, quita los Miraculouses a Marinette y a Adrien para protegerles...<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>17 de Septiembre - 5:30pm (EST)</span></div>"
     },
     "n2":{
-      "title":"Spoilers (No hay traducción :( )",
+      "title":"Spoilers <span style=\"font-size:15px;\">(No hay traducción :( )</span>",
       "desc":"<div class='spoilersHere'></div>"
     },
     "n3":{
@@ -33,7 +33,7 @@
       "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Startrain</span><br><span style='font-size:16px;'>Ladybug & Cat Noir combaten contra Startrain, la versión akumatizada de la madre de Max. Nuestros héroes necesitarán ayuda para derrotarla!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>16 de Septiembre - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Festín</span><br><span style='font-size:16px;'>Quando Master Fu se acuerda de su pasado, quita los Miraculouses a Marinette y a Adrien para protegerles...<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>17 de Septiembre - 5:30pm (EST)</span></div>"
     },
     "n2":{
-      "title":"Spoilers (No hay traducción :( )",
+      "title":"Spoilers <span style=\"font-size:15px;\"(No hay traducción :( )</span>",
       "desc":"<div class='spoilersHere'></div>"
     },
     "n3":{
