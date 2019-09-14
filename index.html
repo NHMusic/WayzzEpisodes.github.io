@@ -209,7 +209,12 @@ var g=function(p){return document.querySelector(p);}
 document.querySelectorAll('.select-css')[1].style.marginLeft=((window.innerWidth/2)-100).toString()+'px';
 if(!localStorage['MLlanguage']){localStorage['MLlanguage']='eng'}
 document.querySelector('.langChoose').value=localStorage['MLlanguage'];
-g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg';
+if(localStorage['MLlanguage'].includes('eng')){
+	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg';
+	for(var o=0;o<document.querySelectorAll('.tabBtn').length;o++){
+		document.querySelectorAll('.tabBtn')[o].style.padding='20px 20px 15px 35px';
+	}
+}
 if(localStorage['MLlanguage'].includes('es')){
 	g('.gotoNewsTab').innerHTML='Noticias';
 	g('.gotoEpisodesTab').innerHTML='Episodios';
