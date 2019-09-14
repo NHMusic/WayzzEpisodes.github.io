@@ -218,6 +218,11 @@ if(localStorage['MLlanguage'].includes('es')){
 	g('.gotoEpisodesTab').innerHTML='Episodios';
 	g('.gotoAboutTab').innerHTML='Sobre Nosotros';
 }
+if(localStorage['MLlanguage'].includes('fr')){
+	g('.gotoNewsTab').innerHTML='Nouvelles';
+	g('.gotoEpisodesTab').innerHTML='Épisodes';
+	g('.gotoAboutTab').innerHTML='À Propos de Nous';
+}
 document.querySelector('.langChoose').onchange=function(){
   localStorage['MLlanguage']=document.querySelector('.langChoose').value;
   localStorage['MLtab']='S1';
@@ -325,6 +330,9 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
   for (var i=1;i<Object.keys(json).length+1;i++){
     if(localStorage['MLlanguage'].includes('es')){
     	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Temporada '+i+'</option>';
+    }
+    if(localStorage['MLlanguage'].includes('fr')){
+    	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Saison '+i+'</option>';
     }
     if(localStorage['MLlanguage'].includes('en')){
     	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Season '+i+'</option>';
