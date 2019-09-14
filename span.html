@@ -220,6 +220,7 @@ if(localStorage['MLlanguage'].includes('es')){
 }
 document.querySelector('.langChoose').onchange=function(){
   localStorage['MLlanguage']=document.querySelector('.langChoose').value;
+  localStorage['MLtab']='S1';
   window.location.reload();
 };
 $.getJSON("news.json", function(jsonfull) {
