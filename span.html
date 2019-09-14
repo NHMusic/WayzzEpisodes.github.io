@@ -322,7 +322,12 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
   localStorage['MLeps']=''
   localStorage['MLepNames']=''
   for (var i=1;i<Object.keys(json).length+1;i++){
-    document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Season '+i+'</option>';
+    if(localStorage['MLlanguage'].includes('es')){
+    	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Temporada '+i+'</option>';
+    }
+    if(localStorage['MLlanguage']=='en'){
+    	document.querySelector('.seasonChoose').innerHTML+='<option value="S'+i+'">Season '+i+'</option>';
+    }
     document.querySelector('.ytcont').innerHTML+='<div style="width:80%;justify-content:center;z-index:-1;margin:0;margin-left:9%;margin-top:10px;" id="ytThumbs"></div>';
     for (var l=1;l<eval('Object.keys(json.s'+i+').length+1');l++){
       var epName=eval('json.s'+i+'.e'+l+'.name').replace("'","\'"),
