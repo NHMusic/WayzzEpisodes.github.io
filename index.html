@@ -98,6 +98,7 @@ li {
   display: table-cell; 
   position: relative; 
   padding: 15px 0;
+  vertical-align:middle;
 }
 .tabBtn{
   color: #000;
@@ -173,7 +174,7 @@ hr{
 <li><a class="tabBtn gotoNewsTab" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
 <li><a class="tabBtn gotoEpisodesTab" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
 <li><a class="tabBtn gotoAboutTab" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
-<li style="padding-bottom:2px;"><a class="tabBtn" href="#"><img class="langImg" style="margin-right:10px;" width="30" height="40"><br><br><select class="langChoose select-css"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option><option value="fr">Français</option></select></a></li>
+<li><a class="tabBtn" href="#"><img class="langImg" style="margin-right:10px;" width="30" height="40"><br><br><select class="langChoose select-css"><option value="eng">English</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option><option value="fr">Français</option></select></a></li>
 </ul>
 </div>
 <div class="newsTab tabML"><h1 class="newsTit"><u>News</u></h1><div class="newsTabnews"></div></div>
