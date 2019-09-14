@@ -12,5 +12,33 @@
       "title":"New Episodes Released:",
       "desc":"<a style='text-decoration:none;color:black' href='watch.html?v=drive_147EVrpw8xo82gl9TV59Tk_tw8ez4orwK'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b24.png'><br>Ladybug</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_1pNqeclAmRdwXYAADXnL3n4UMASORR0_4'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b18.jpg'><br>Ikari Gozen (High Quality)</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_10XmiiQnSNx5kwP-U8S188GaR_LVKJSw7'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b11.jpg'><br>Desperada</a>"
     }
+  },
+  "es":{
+    "n1":{
+      "title":"Fechas de estreno:",
+      "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Startrain</span><br><span style='font-size:16px;'>Ladybug & Cat Noir combaten contra Startrain, la versión akumatizada de la madre de Max. Nuestros héroes necesitarán ayuda para derrotarla!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>16 de Septiembre - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Festín</span><br><span style='font-size:16px;'>Quando Master Fu se acuerda de su pasado, quita los Miraculouses a Marinette y a Adrien para protegerles...<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>17 de Septiembre - 5:30pm (EST)</span></div>"
+    },
+    "n2":{
+      "title":"Spoilers (No hay traducción :( )",
+      "desc":"<div class='spoilersHere'></div>"
+    },
+    "n3":{
+      "title":"Nuevos Episodes:",
+      "desc":"<a style='text-decoration:none;color:black' href='watch.html?v=drive_147EVrpw8xo82gl9TV59Tk_tw8ez4orwK'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b24.png'><br>Ladybug</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_1pNqeclAmRdwXYAADXnL3n4UMASORR0_4'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b18.jpg'><br>Ikari Gozen (High Quality)</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_10XmiiQnSNx5kwP-U8S188GaR_LVKJSw7'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b11.jpg'><br>Desperada</a>"
+    }
+  }
+  "esla":{
+    "n1":{
+      "title":"Fechas de estreno:",
+      "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Startrain</span><br><span style='font-size:16px;'>Ladybug & Cat Noir combaten contra Startrain, la versión akumatizada de la madre de Max. Nuestros héroes necesitarán ayuda para derrotarla!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>16 de Septiembre - 5:30pm (EST)</span></div><div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Festín</span><br><span style='font-size:16px;'>Quando Master Fu se acuerda de su pasado, quita los Miraculouses a Marinette y a Adrien para protegerles...<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>17 de Septiembre - 5:30pm (EST)</span></div>"
+    },
+    "n2":{
+      "title":"Spoilers (No hay traducción :( )",
+      "desc":"<div class='spoilersHere'></div>"
+    },
+    "n3":{
+      "title":"Nuevos Episodes:",
+      "desc":"<a style='text-decoration:none;color:black' href='watch.html?v=drive_147EVrpw8xo82gl9TV59Tk_tw8ez4orwK'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b24.png'><br>Ladybug</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_1pNqeclAmRdwXYAADXnL3n4UMASORR0_4'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b18.jpg'><br>Ikari Gozen (High Quality)</a><br><a style='text-decoration:none;color:black' href='watch.html?v=drive_10XmiiQnSNx5kwP-U8S188GaR_LVKJSw7'><img style='width:90%;' src='https://nhnet.github.io/MLVids/b11.jpg'><br>Desperada</a>"
+    }
   }
 }
