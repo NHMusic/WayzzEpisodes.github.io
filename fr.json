@@ -1,0 +1,36 @@
+{
+  "s1":{
+    "e1":{
+      "id":"drive_1BcGf1oHVzd0XkCPKrMqKbK2K-1XJmbjw",
+      "name":"Climatika", "dur":"22:31",
+      "thumb":""
+    },
+    "e2":{
+      "id":"drive_1CKYWvM9Cn2MEiC9hUtL9ROWKHxqmAJ5T",
+      "name":"Le Bulleur",
+      "dur":"21:41",
+      "thumb":""
+    },
+    "e3":{
+      "id":"drive_12CbS2jbWUHUqKVNvAp2BO9R2a_kfKmna",
+      "name":"Le Pharaon",
+      "dur":"22:36",
+      "thumb":""
+    },
+    "e4":{
+      "id":"drive_1mO_-D97ydmJr8y8c7bakFJXVCIlEA_gq",
+      "name":"Lady WiFi", "dur":"21:39",
+      "thumb":""
+    },
+    "e5":{
+      "id":"drive_1FCsnyhLwTNhkCh-yt_ybPJmaGA06jVJE/",
+      "name":"Chronogirl", "dur":"20:49",
+      "thumb":""
+    },
+    "e6":{
+      "id":"drive_1KOnpHgFUFOXGoZlr92sHhhPdEYKuAhqa",
+      "name":"M. Pigeon", "dur":"21:39",
+      "thumb":""
+    }
+  }
+}
