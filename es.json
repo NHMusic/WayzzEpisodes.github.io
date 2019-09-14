@@ -2,64 +2,62 @@
   "s1":{
     "e1":{
       "id":"drive_1dMPA46GC2vYtyG6YvTM8pPSKmH9EOZ0L",
-      "name":"Clima tempestuoso", "dur":"22:31",
+      "name":"Clima tempestuoso",
       "thumb":""
     },
     "e2":{
       "id":"drive_1Ss2gnM9TCGzA5b-3DF6PbgR0yTPqUiL0",
       "name":"Burbujeo",
-      "dur":"21:41",
       "thumb":""
     },
     "e3":{
       "id":"drive_189cQDO3R9JcO3r_Qjw92Bd56rHlPQIHA",
       "name":"Faraón",
-      "dur":"22:36",
       "thumb":""
     },
     "e4":{
       "id":"drive_13D-4vzOKhBmYL8DzzEH8qceIroig8Rju",
-      "name":"Lady WiFi", "dur":"21:39",
+      "name":"Lady WiFi",
       "thumb":""
     },
     "e5":{
       "id":"drive_1ZnxRJUsfUL-ZI26T1NH1UOOdOvwShuhD",
-      "name":"Quiebratiempo", "dur":"20:49",
+      "name":"Quiebratiempo",
       "thumb":""
     },
     "e6":{
       "id":"drive_1qlFvlmp4da9VCh26zOfRaQ5RqRomB3uC",
-      "name":"Mr. Pichón", "dur":"21:39",
+      "name":"Mr. Pichón",
       "thumb":""
     },
     "e7":{
       "id":"drive_17Of5x-hvmdHj12ZsO-zTuvFbQJcxU01E",
-      "name":"Demoilustrador", "dur":"21:39",
+      "name":"Demoilustrador",
       "thumb":""
     },
     "e8":{
       "id":"drive_1BwB9TVuvo1-YsEgEpCHjVWWcb8xkT9cp",
-      "name":"Rogercop", "dur":"21:39",
+      "name":"Rogercop",
       "thumb":""
     },
     "e9":{
       "id":"drive_1jmX2I1CfLMsjH0PKQYQP9M6yC9s4I0FC",
-      "name":"Copi-gato", "dur":"21:39",
+      "name":"Copi-gato",
       "thumb":""
     },
     "e10":{
       "id":"drive_173VseiYJnuvZJAKXMSGHHMDfaqKZvW4P",
-      "name":"Cupido Negro", "dur":"21:39",
+      "name":"Cupido Negro",
       "thumb":""
     },
     "e11":{
       "id":"drive_17SAnXm4S9t5CsPSu049l_A7pyPGeDcsV",
-      "name":"Horrificadora", "dur":"21:39",
+      "name":"Horrificadora",
       "thumb":""
     },
     "e12":{
       "id":"drive_1EPsQXlUSHKG1kDNDQySTko-eJECpO6Gz",
-      "name":"Darkblade", "dur":"21:39",
+      "name":"Darkblade",
       "thumb":""
     }
   }
