@@ -220,6 +220,16 @@ if(localStorage['MLlanguage'].includes('eng')){
 		document.querySelectorAll('.tabBtn')[o].style.padding='20px 20px 15px 25px';
 	}
 }
+function diff_hours(dt2, dt1) 
+ {
+  var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+  diff /= (60); //*60 for hours
+  return Math.abs(Math.round(diff));
+  
+ }
+dt1 = new Date();
+dt2 = new Date("September 17, 2019 21:30:00")+(d.getTimezoneOffset()*-1);
+console.log(diff_hours(dt1, dt2));
 if(localStorage['MLlanguage'].includes('es')){
 	g('.gotoNewsTab').innerHTML='Noticias';
 	g('.gotoEpisodesTab').innerHTML='Episodios';
