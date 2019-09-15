@@ -337,37 +337,37 @@ if(window.location.search.includes('creditsNeeded')){
     if(localStorage['NHName']&&localStorage['NHName']!='Nicholas Huaman 10C'&&localStorage['NHName']!='Nicholas Huaman 11C'){
       document.body.innerHTML='<h1 style="text-align:center;">Page maintenance</h1>'
     }
-    if(localStorage['MLeps']){
-      var arr=localStorage['MLeps'].split('_/_'),arr2=localStorage['MLepNames'].split('_/_');
-      var nextUp=arr2[arr.indexOf(window.location.search.replace('?v=',''))+1];
-      if(nextUp==''){
-        nextUp='>No more episodes!';
-      }else{
-        nextUp=' href="MLwatch.html?v='+arr[arr.indexOf(window.location.search.replace('?v=',''))+1]+'">'+nextUp;
-      }
-      document.querySelector('.vidTitle').innerHTML='<u>'+arr2[arr.indexOf(window.location.search.replace('?v=',''))]+'</u><br><span style="font-size:20px;">Video blocked or offline?</span><a href="https://www.fetchtube.com/download.php?s=magicyt&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D'+arr[arr.indexOf(window.location.search.replace('?v=',''))]+'"><br><button class="download" style="color:#fff;background: linear-gradient(308deg, #01c100, #ffffff, #00ae0e);background-size: 600% 600%;-webkit-animation: Download 10s ease infinite;-moz-animation: Download 10s ease infinite;-o-animation: Download 10s ease infinite;animation: Download 10s ease infinite;cursor:pointer;padding-left:20px;padding-right:20px;border:1px solid black;border-radius:20px;user-select:none;font-family:\'Baloo Bhai\', cursive;font-size:25px;">Download Episode</button></a><br><br><div style="user-select:none;font-family:\'Baloo Bhai\', cursive;">Next up: <a style="color:black;cursor:pointer;text-decoration:none;background:#00AAFF;padding:5px;border-radius:20px;"'+nextUp+'</a></div>';
-    }
+//     if(localStorage['MLeps']){
+//       var arr=localStorage['MLeps'].split('_/_'),arr2=localStorage['MLepNames'].split('_/_');
+//       var nextUp=arr2[arr.indexOf(window.location.search.replace('?v=',''))+1];
+//       if(nextUp==''){
+//         nextUp='>No more episodes!';
+//       }else{
+//         nextUp=' href="MLwatch.html?v='+arr[arr.indexOf(window.location.search.replace('?v=',''))+1]+'">'+nextUp;
+//       }
+//       document.querySelector('.vidTitle').innerHTML='<u>'+arr2[arr.indexOf(window.location.search.replace('?v=',''))]+'</u><br><span style="font-size:20px;">Video blocked or offline?</span><a href="https://www.fetchtube.com/download.php?s=magicyt&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D'+arr[arr.indexOf(window.location.search.replace('?v=',''))]+'"><br><button class="download" style="color:#fff;background: linear-gradient(308deg, #01c100, #ffffff, #00ae0e);background-size: 600% 600%;-webkit-animation: Download 10s ease infinite;-moz-animation: Download 10s ease infinite;-o-animation: Download 10s ease infinite;animation: Download 10s ease infinite;cursor:pointer;padding-left:20px;padding-right:20px;border:1px solid black;border-radius:20px;user-select:none;font-family:\'Baloo Bhai\', cursive;font-size:25px;">Download Episode</button></a><br><br><div style="user-select:none;font-family:\'Baloo Bhai\', cursive;">Next up: <a style="color:black;cursor:pointer;text-decoration:none;background:#00AAFF;padding:5px;border-radius:20px;"'+nextUp+'</a></div>';
+//     }
   }else{
     document.querySelector('.videoHere').srcdoc='<img style="width:'+document.querySelector('.videoHere').style.width+';height:'+document.querySelector('.videoHere').style.height+';" src="https://www.astons.com.sg/wp-content/uploads/2017/01/Title-ComingSoon.png">';
     document.querySelector('.vidTitle').innerHTML='Video hasn\'t come out yet!<a href=""><br><button class="download" style="color:#fff;background: linear-gradient(308deg, #0073bf, #ffffff, #0073bf);background-size: 600% 600%;-webkit-animation: Download 10s ease infinite;-moz-animation: Download 10s ease infinite;-o-animation: Download 10s ease infinite;animation: Download 10s ease infinite;cursor:pointer;padding-left:20px;padding-right:20px;border:1px solid black;border-radius:20px;user-select:none;font-family:\'Baloo Bhai\', cursive;font-size:25px;">Go back</button></a>';
   }
 }
-var notIdle=true;
-$(window).focus(function() {
-  notIdle=true;
-});
-$(window).blur(function() {
-  notIdle=false;
-});
-if(!localStorage['creditcount']){
-  localStorage['creditcount']='0';
-}
-document.querySelector('.creditcount').innerHTML=localStorage['creditcount'];
-setInterval(function(){
-  if(notIdle){
-    localStorage['creditcount']=(Number(localStorage['creditcount'])+1).toString();document.querySelector('.creditcount').innerHTML=localStorage['creditcount'];
-  }
-},30000);
+// var notIdle=true;
+// $(window).focus(function() {
+//   notIdle=true;
+// });
+// $(window).blur(function() {
+//   notIdle=false;
+// });
+// if(!localStorage['creditcount']){
+//   localStorage['creditcount']='0';
+// }
+// document.querySelector('.creditcount').innerHTML=localStorage['creditcount'];
+// setInterval(function(){
+//   if(notIdle){
+//     localStorage['creditcount']=(Number(localStorage['creditcount'])+1).toString();document.querySelector('.creditcount').innerHTML=localStorage['creditcount'];
+//   }
+// },30000);
 </script>
 </div>
 
