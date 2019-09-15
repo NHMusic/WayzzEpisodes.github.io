@@ -202,6 +202,10 @@ var STYLE_PREFIX = 'wsite';
   background-color: #5cb85c;
   color: white;
 }
+.fullscreenIframe{
+    width:100%;
+    height:100vh;
+}
 </style>
     </head>
     <body style="margin:0;max-width: 100%;overflow-x: hidden;" class="no-header-page  wsite-page-search  full-width-body-off header-overlay-on alt-nav-off  wsite-theme-dark">
@@ -323,6 +327,9 @@ if(window.location.search.includes('creditsNeeded')){
       }else{
         window.location='loading.html'+window.location.search;
       }
+    }else if(window.location.search.replace('?v=','').includes('vkvideo')){
+        document.body.innerHTML='<iframe src="" class="fullscreenIframe" width="853" height="480" frameborder="0" allowfullscreen></iframe>';
+        document.querySelector('.fullscreenIframe').src='https://vk.com/video_ext.php?'+window.location.search.replace('?v=','').replace('vkvideo','');
     }else{
       document.body.style.opacity='1';
       document.querySelector('.videoHere').src='https://youtube.com/embed/'+window.location.search.replace('?v=','')+'?enablejsapi'//+&mute=1;
