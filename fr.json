@@ -39,12 +39,42 @@
     },
     "e8":{
       "id":"drive_1ZIpcwYkHo_wnHaWsJjrR5gASU80m-C_w",
-      "name":"Rogercop", "dur":"21:39",
+      "name":"Rogercop",
       "thumb":""
     },
     "e9":{
       "id":"drive_1GHgahk7xa9X7Q2vqC6BKYRbj8TRpAIJP",
-      "name":"L'Imposteur", "dur":"21:39",
+      "name":"L'Imposteur",
+      "thumb":""
+    },
+    "e10":{
+      "id":"drive_1GCW83aYiV5m_C5888Z4Y0sJyC2HUgbas",
+      "name":"Dislocœur",
+      "thumb":""
+    },
+    "e11":{
+      "id":"drive_15jJT6ySiyOZcwJiKo7IKPBHzY11zarMx",
+      "name":"Horrificator",
+      "thumb":""
+    },
+    "e12":{
+      "id":"drive_1A1rp48W34t03nX8fNd5uT6MmV4eDnJrr",
+      "name":"Le Chevalier Noir",
+      "thumb":""
+    },
+    "e13":{
+      "id":"drive_1JNulqX20-08Gt2DDKvQL64E8WOOZJvVb",
+      "name":"Le Mime",
+      "thumb":""
+    },
+    "e14":{
+      "id":"drive_1Xh1-SMADmZ9ytsiMGXG4sZCgCr9Swfis",
+      "name":"Kung Food",
+      "thumb":""
+    },
+    "e15":{
+      "id":"drive_1VEprK2-yPh0EBK0JrOK5P9itYJDyC2VP",
+      "name":"Le Gamer",
       "thumb":""
     }
   }
