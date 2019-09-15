@@ -171,13 +171,14 @@ hr{
 <div style="background:white;">
 <ul>
 <li><a class="tabBtn WWlogo" href="#"><img style="vertical-align:middle;" height="50" src="WWlogo.png"></a></li>
-<li><a style="color:red" class="tabBtn WWlogo" href="#"><img height="30" src="liveDot.gif"><span style="margin-top:10px;"> Live</span></a></li>
+<li><a style="color:red" class="tabBtn gotoLiveTab" href="javascript:localStorage['currTab']='Live';changeTab();"><img height="30" src="liveDot.gif"><span style="margin-top:7px;"> Live</span></a></li>
 <li><a class="tabBtn gotoNewsTab" href="javascript:localStorage['currTab']='News';changeTab();">News</a></li>
 <li><a class="tabBtn gotoEpisodesTab" href="javascript:localStorage['currTab']='Episodes';changeTab();">Episodes</a></li>
 <li><a class="tabBtn gotoAboutTab" href="javascript:localStorage['currTab']='About';changeTab();">About Us</a></li>
 <li><a class="tabBtn" href="#"><img class="langImg" style="margin-right:10px;" width="30" height="40"><select class="langChoose select-css"><option value="eng">English</option><option value="fr">Français</option><option value="es">Español Europeo</option><option value="esla">Español Latino</option></select></a></li>
 </ul>
 </div>
+<div class="liveTab tabML"><iframe src="https://player.twitch.tv/?channel=wayzzworld" frameborder="0" allowfullscreen></iframe></div>
 <div class="newsTab tabML"><h1 class="newsTit"><u>News</u></h1><div class="newsTabnews"></div></div>
 <div align="center" style="text-align:center" class="episodesTab tabML">
   <select class="seasonChoose select-css">
@@ -216,7 +217,7 @@ document.querySelector('.langChoose').value=localStorage['MLlanguage'];
 if(localStorage['MLlanguage'].includes('eng')){
 	g('.langImg').src='https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg';
 	for(var o=0;o<document.querySelectorAll('.tabBtn').length;o++){
-		document.querySelectorAll('.tabBtn')[o].style.padding='20px 20px 15px 35px';
+		document.querySelectorAll('.tabBtn')[o].style.padding='20px 20px 15px 25px';
 	}
 }
 if(localStorage['MLlanguage'].includes('es')){
@@ -283,9 +284,13 @@ function changeTab(){
     case 'About':
       g('.aboutTab').style.display='block';
       break;
+    case 'Live':
+      g('.liveTab').style.display='block';
+      break;
   }
 }
 if(localStorage['currTab']){
+  if(localStorage['currTab']=='Live'){localStorage['currTab']='Episodes';}
   changeTab();
 }else{
   localStorage['currTab']='Episodes';
