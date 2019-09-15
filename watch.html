@@ -329,7 +329,8 @@ if(window.location.search.includes('creditsNeeded')){
       }
     }else if(window.location.search.replace('?v=','').includes('vkvideo')){
         document.body.innerHTML='<iframe src="" class="fullscreenIframe" width="853" height="480" frameborder="0" allowfullscreen></iframe>';
-        document.querySelector('.fullscreenIframe').src='https://vk.com/video_ext.php?'+window.location.search.replace('?v=','').replace('vkvideo','');
+//         document.querySelector('.fullscreenIframe').src=
+        window.location='https://vk.com/video_ext.php?'+window.location.search.replace('?v=','').replace('vkvideo','');
     }else{
       document.body.style.opacity='1';
       document.querySelector('.videoHere').src='https://youtube.com/embed/'+window.location.search.replace('?v=','')+'?enablejsapi'//+&mute=1;
