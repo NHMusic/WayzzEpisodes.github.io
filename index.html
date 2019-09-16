@@ -405,7 +405,11 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
           
         }
       }
-      a2.setAttribute('href', 'watch.html?v='+epUrl);
+      if(epName=='Startrain'){
+        a2.setAttribute('href', "javascript:localStorage['currTab']='Live';changeTab();");
+      }else{
+      	a2.setAttribute('href', 'watch.html?v='+epUrl);
+      }
       a2.setAttribute('style', 'width:100%;text-decoration:none;color:inherit;font-family: "Baloo Bhai", cursive;');
       var img = document.createElement('img');
       img.setAttribute('src', epThumb);
