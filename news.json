@@ -44,7 +44,7 @@
   "fr":{
     "n1":{
       "title":"Dates de sortie:",
-      "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Kwami Buster</span><br><span style='font-size:16px;'>Mrs. Mendeleiev es akumatizada en Kwami Buster, que quiere demonstrar la existencia de los Kwamis!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>20 de Octubre - 8:57AM (Québec)</span></div>"
+      "desc":"<div onmouseover='removeAllAnimationsOffExpandies();this.style.animation=\"0.5s expand forwards\";' class='expandable' style='overflow:hidden;font-size:35px;background:white;border-radius:20px;height:40px;width:90%;margin-left:5%;'><span class='releaseTitle' style='text-decoration:underline;'>Kwami Buster</span><br><span style='font-size:16px;'>Mme. Mendeleiev est akumatisée à Kwami Buster, qui veut démontrer l'existence des Kwamis!<br></span><span style='font-size:20px;'>Family Channel (Canada)<br>20 Octobre - 8:57AM (Québec)</span></div>"
     },
     "n2":{
       "title":"Spoilers <span style=\"font-size:15px;\">(No hay traducción :( )</span>",
