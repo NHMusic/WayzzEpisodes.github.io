@@ -283,9 +283,9 @@ $.getJSON("news.json", function(jsonfull) {
 			).appendTo('.spoilersHere');
 	     }
 	    if(insta.data[index].type=='carousel'){
-		    var carousel='<div style="display:flex;width:100%;">';
+		    var carousel='';
 		     $.each(insta.data[index].carousel_media,function (index2,obj2) {
-			carousel+='<img style="width:90%;margin-left:5%;" src="'+obj2.images.standard_resolution.url+'"/>';
+			carousel+='<img style="width:'+(100/insta.data[index].carousel_media.length)'%;margin-left:5%;" src="'+obj2.images.standard_resolution.url+'"/><br>';
 		     });
 		    $(carousel+'<h2>'+insta.data[index].caption.text.split('\n')[0]+'</h2>').appendTo('.spoilersHere');
 	     }
