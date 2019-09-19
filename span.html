@@ -8,6 +8,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.tabML{
+  display:none;
+}
 .nav {
   display: inline-block;
   background: #FFFFFF;
@@ -223,175 +226,6 @@ Episodes
 </li>
 </ul>
 </div>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Miraculous Episodes Online</title><meta property="og:site_name" content="Wayzz World Episodes" />
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-<link href="https://media.cdnandroid.com/5d/19/c1/f5/59/imagen-miraculous-ladybug-cat-noir-the-official-game-0big.jpg" rel="shortcut icon">
-<meta property="og:title" content="Wayzz Episodes" />
-<meta property="og:description" content="Miraculous Episodes made just for you!" />
-<meta property="og:image" content="https://media.cdnandroid.com/5d/19/c1/f5/59/imagen-miraculous-ladybug-cat-noir-the-official-game-0big.jpg" />
-<meta property="og:url" content="https://wayzzepisodes.github.io" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:700'>
-<style>
-    body,html {
-  margin: 0;
-  text-align:center;
-  font-family: 'Varela Round', sans-serif;
-  background: #e5e5e5;
-  justify-content:center;
-}
-.expandable{
-  cursor:pointer;
-  margin-top:20px;
-  padding:15px;
-}
-@keyframes expand{
-  from{
-    height:40px;
-  }
-  to{
-    height:250px;
-  }
-}
-@keyframes expandMob{
-  from{
-    height:40px;
-  }
-  to{
-    height:350px;
-  }
-}
-.ytthumb{background: #555;}
-.select-css {
-    display: block;
-    font-size: 16px;
-    cursor:pointer;
-    font-family: sans-serif;
-    font-weight: 700;
-    color: #444;
-    text-align:center;
-    line-height: 1.3;
-    width:200px;
-    padding: .6em 1.4em .5em .8em;
-    box-sizing: border-box;
-    border: 1px solid #aaa;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-    border-radius: .5em;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
-}
-.select-css::-ms-expand {
-    display: none;
-}
-.select-css:hover {
-    border-color: #888;
-}
-.select-css:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222; 
-    outline: none;
-}
-.select-css option {
-    font-weight:normal;
-}
-ul { 
-  margin:0;
-  padding: 0; 
-  list-style: none; 
-  display: table;
-  width: 900px;
-  background:white;
-  text-align: center;
-}
-li { 
-  display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
-  vertical-align:middle;
-}
-.tabBtn{
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  text-align:center;
-  display: flex;
-  padding: 15px 20px;
-  position: relative;
-}
-.tabBtn:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #ff0000;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-hr{
-  border: 5px solid #555;
-  margin-top:20px;
-  border-radius: 5px;
-  width:90%;
-}
-.tabBtn:hover{
-  color:red;
-}
-.WWlogo:hover{
-  color:green;
-}
-.tabBtn:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-@media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
-}
-#ytThumbs{display:none;padding-bottom:55px;}
-.ytthumb{
-  animation:none;
-}
-.ytlist:hover{
-  transform:scale(1.05);
-}
-.tabML{
-  display:none;
-  text-align:center;
-  margin-top:30px;
-}
-.newsTabnews{display:flex;}
-  </style>
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-</head>
-<body translate="no">
 <!-- <div style="background:white;">
 <ul>
 <li><a class="tabBtn WWlogo" href="#"><img style="vertical-align:middle;" height="50" src="WWlogo.png"></a></li>
@@ -447,22 +281,6 @@ if(localStorage['MLlanguage'].includes('eng')){
 		document.querySelectorAll('.tabBtn')[o].style.padding='20px 20px 15px 25px';
 	}
 }
-// function diff_hours(dt2, dt1) 
-//  {
-//   var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-//   diff /= (60); //*60 for hours
-//   return Math.abs(Math.round(diff));
-  
-//  }
-// setInterval(function(){
-// var dt1 = new Date(),
-// dt2 = new Date("September 16, 2019 21:30:00");
-// console.log(diff_hours(dt1, dt2));
-// var hour=(Math.floor(diff_hours(dt1, dt2)/60)+((new Date().getTimezoneOffset()/60)*-1)).toString(),
-// min=Math.floor(((diff_hours(dt1, dt2)/60)-Math.floor(diff_hours(dt1, dt2)/60))*60).toString(),
-// secs='unknown';	
-// g('.untilLive').innerHTML=hour+' hours '+min+' mins';
-// },1000);
 if(localStorage['MLlanguage'].includes('es')){
 	g('.gotoNewsTab').innerHTML='Noticias';
 	g('.gotoEpisodesTab').innerHTML='Episodios';
@@ -618,7 +436,6 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
       if(epName==''){
         epName='Uploading a new episode!';
       }
-
       localStorage['MLeps']+=epUrl+'_/_';
       localStorage['MLepNames']+=epName+'_/_';
       var imgCont = document.createElement('div');
@@ -646,7 +463,6 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
       img.classList+=' ytthumb';
       a2.appendChild(img);
       a2.appendChild(imgCont);
-//       img.innerHTML+='<div class="vidDuration durationText" style="z-index:800;position:absolute;top:0;right:0;border-radius:0 10px 0 10px;padding:5px; background:#aaa; color white;pointer-events:none;border-bottom:1px solid black;border-left:1px solid black;">' + epDur + '<br>' +'</div>';
       imgCont.style.marginTop='-4px';
       imgCont.innerHTML+='<a style="text-decoration:none" href="MLwatch.html?v='+epUrl+'"><div class="vidDuration titleText" style="background:white;color:#222;font-size:25px;width:100%;padding:10px;"><span style="font-family: \'Acme\', sans-serif;">'+epName+'</span><!--<br>Season '+i+' Episode '+l+'<br>--></div></a>';
       document.querySelectorAll("#ytThumbs")[i-1].innerHTML+='<div class="ytlist" style="font-family: \'Baloo Bhai\',cursive;color:#222; padding-top:5px;padding-bottom:5px;width:366.666px;text-align:left;margin-left:40px;margin-top:10px;">'+nodeToString(a2)+'</div>';
@@ -694,10 +510,6 @@ $.getJSON(localStorage['MLlanguage']+".json", function(json) {
         document.querySelectorAll('.ytlist')[o].style.width='100%';
         document.querySelectorAll('.ytlist')[o].style.height='auto';
       }
-//       for(var o=0;o<document.querySelectorAll('.durationText').length;o++){
-//         document.querySelectorAll('.durationText')[o].style.fontSize=(0.02196193265*window.innerHeight).toString()+'px';
-//         document.querySelectorAll('.durationText')[o].style.display='none';
-//       }
       for(var l=0;l<document.querySelectorAll('.titleText').length;l++){
         document.querySelectorAll('.titleText')[l].style.fontSize=(0.02596193265*window.innerHeight).toString()+'px';
         document.querySelectorAll('.titleText')[l].style.width='100%';
