@@ -274,23 +274,24 @@ $.getJSON("news.json", function(jsonfull) {
       g('.newsTabnews').innerHTML+='<div style="display:block;width:33.333%;"><h1>'+title+'</h1><h2>'+desc+'</h2></div>';
     }
   }
-//   $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token=16672733031.1677ed0.9fde1627cc9d424b80407183f50dccc5&callback=?',function (insta) {
-//     // $.each(insta.graphql.hashtag.edge_hashtag_to_media.edges,function (photos,src) {
-//      $.each(insta.data,function (index,obj) {
-// 	    if(insta.data[index].type=='image'){
-// 	      		$(
-// 	     		 '<img style="width:90%;margin-left:5%;" src="'+insta.data[index].images.standard_resolution.url+'"/><h2>'+insta.data[index].caption.text.split('\n')[0]+'</h2>'
-// 	      		).appendTo('.spoilersHere');
-// 	     }
-// 	    if(insta.data[index].type=='carousel'){
-// 		    var carousel='<div style="display:flex;width:100%;">';
-// 		     $.each(insta.data[index].carousel_media,function (index2,obj2) {
-// 			carousel+='<img style="width:90%;margin-left:5%;" src="'+obj2.images.standard_resolution.url+'"/>';
-// 		     });
-// 		    $(carousel+'<h2>'+insta.data[index].caption.text.split('\n')[0]+'</h2>').appendTo('.spoilersHere');
-// 	     }
-//   	});
-// });
+  $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token=16672733031.1677ed0.9fde1627cc9d424b80407183f50dccc5&callback=?',function (insta) {
+	// $.each(insta.graphql.hashtag.edge_hashtag_to_media.edges,function (photos,src) {
+	$.each(insta.data,function (index,obj) {
+	    if(insta.data[index].type=='image'){
+			$(
+			 '<img style="width:90%;margin-left:5%;" src="'+insta.data[index].images.standard_resolution.url+'"/><h2>'+insta.data[index].caption.text.split('\n')[0]+'</h2>'
+			).appendTo('.spoilersHere');
+	     }
+	    if(insta.data[index].type=='carousel'){
+		    var carousel='<div style="display:flex;width:100%;">';
+		     $.each(insta.data[index].carousel_media,function (index2,obj2) {
+			carousel+='<img style="width:90%;margin-left:5%;" src="'+obj2.images.standard_resolution.url+'"/>';
+		     });
+		    $(carousel+'<h2>'+insta.data[index].caption.text.split('\n')[0]+'</h2>').appendTo('.spoilersHere');
+	     }
+	});
+});
+});
 function removeAllAnimationsOffExpandies(){
   for(var i=0;i<document.querySelectorAll(".expandable").length;i++){
     document.querySelectorAll(".expandable")[i].style.animation='none';
