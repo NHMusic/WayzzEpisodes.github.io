@@ -97,5 +97,7 @@
           'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E03.Copycat.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4'
   ];
   var g=function(p){return document.querySelector(p);}
+  try{
   g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')
+  }catch(err){alert(err)}
 </script>
