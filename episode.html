@@ -87,6 +87,5 @@
 <script>
   var s1=['https://vk.com/doc561717790_516575378?hash=9821d2fc5dcd901470&dl=15b2ba9697141d51f6']
   var g=function(p){return document.querySelector(p);}
-  g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s','').replace(window.location.search[0]+'e',''))-1).toString()+']')
-  alert(g('.video-js').src);
+  g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')
 </script>
