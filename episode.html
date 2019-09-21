@@ -186,6 +186,8 @@
             g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
         }
         var myPlayer = videojs('my_video_1');
+        g('video').click();
+        //myPlayer.pause();
         new Promise((resolve, reject) => {
           setTimeout(function(){g('.vjs-fullscreen-control').click()},1000);
         }).catch(function(e){
