@@ -190,6 +190,20 @@
       };
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
+  var lang='',
+      languages=['eng','fr','es','esla'];
+  if(localStorage['MLlanguage']){
+    lang=localStorage['MLlanguage'];
+  }else{
+      localStorage['MLlanguage']='eng';
+      lang=localStorage['MLlanguage'];
+  }
+  for(var i;i<languages.length;i++){
+    if(params.has(languages[i])){
+      localStorage['MLlanguage']=languages[i];
+      lang=localStorage['MLlanguage'];
+    }
+  }
   g('.video-js').style.fontSize=window.innerWidth/100;
   if(params.has('e')){
       g('.video-js').poster=eval('images'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']');
