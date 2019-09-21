@@ -156,6 +156,7 @@
   }
   var myPlayer = videojs('my_video_1');
   document.body.addEventListener('keypress',function(e){
+    alert(e.keyCode)
     if(e.keyCode==37){
        myPlayer.currentTime(myPlayer.currentTime()-5);
     }
