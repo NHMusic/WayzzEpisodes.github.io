@@ -154,4 +154,13 @@
   }else if(window.location.search.replace('?e=s','')[0]=='2'){
       g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')+'.mp4';
   }
+  var myPlayer = videojs('my_video_1');
+  document.body.addEventListener('keypress',function(e){
+    if(e.keyCode==37){
+       myPlayer.currentTime(myPlayer.currentTime()-5);
+    }
+    if(e.keyCode==39){
+      myPlayer.currentTime(myPlayer.currentTime()+5);
+    }
+},500);
 </script>
