@@ -186,7 +186,11 @@
             g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
         }
         var myPlayer = videojs('my_video_1');
-        setTimeout(function(){g('.vjs-fullscreen-control').click()},500);
+        new Promise((resolve, reject) => {
+          setTimeout(function(){g('.vjs-fullscreen-control').click()},500);
+        }).catch(function(e){
+          g('.vjs-fullscreen-control').click()
+        });
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
          g('video').onclick=function(){
           if(!g('video').paused){
