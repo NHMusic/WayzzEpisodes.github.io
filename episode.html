@@ -220,6 +220,7 @@
         }
         document.body.addEventListener('keydown',function(e){
           console.log(e.code);
+          g('#my_video_1').blur();
           if(e.code=='ArrowLeft'){
              myPlayer.currentTime(myPlayer.currentTime()-5);
           }
