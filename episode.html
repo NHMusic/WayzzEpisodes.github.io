@@ -5,7 +5,6 @@
       controls preload="none"
       data-setup='{ "aspectRatio":"640:267", "playbackRates": [0.5,0.75,1, 1.5, 2] }'>
   </video>
-  <a class="download" href="" download><button>Download</button></a>
 </div>
 <style>
   
@@ -148,45 +147,39 @@
   ];
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
-  if(params.has('s')){
-      if(params.has('e')){
-          g('.video-js').poster=eval('images'+params.get('s')+'['+(Number(params.get('e'))-1).toString()+']');
-            if(params.get('s')=='1'){
-              g('.download').href='https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.'+eval('s'+params.get('s')+'['+(Number(params.get('e'))-1).toString()+']')+'.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4';
-              g('.video-js').src='https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.'+eval('s'+params.get('s')+'['+(Number(params.get('e'))-1).toString()+']')+'.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4';
-            }else if(params.get('s')=='2'){
-                g('.video-js').src=eval('s'+params.get('s')+'['+(Number(params.get('e'))-1).toString()+']')+'.mp4';
-                g('.download').href=eval('s'+params.get('s')+'['+(Number(params.get('e'))-1).toString()+']')+'.mp4';
+  if(params.has('e')){
+      g('.video-js').poster=eval('images'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']');
+        if(params.get('e').split('|')[0]=='1'){
+          g('.video-js').src='https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.'+eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4';
+        }else if(params.get('e').split('|')[0]=='2'){
+            g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
+        }
+        var myPlayer = videojs('my_video_1');
+        document.body.addEventListener('keydown',function(e){
+          console.log(e.code);
+          if(e.code=='ArrowLeft'){
+             myPlayer.currentTime(myPlayer.currentTime()-5);
+          }
+          if(e.code=='ArrowUp'){
+             g('video').volume+=0.1;
+          }
+          if(e.code=='ArrowDown'){
+             g('video').volume-=0.1;
+          }
+          if(e.code=='Space'){
+            if(!g('video').paused){
+              myPlayer.pause();
+            }else{
+              myPlayer.play();
             }
-            var myPlayer = videojs('my_video_1');
-            document.body.addEventListener('keydown',function(e){
-              console.log(e.code);
-              if(e.code=='ArrowLeft'){
-                 myPlayer.currentTime(myPlayer.currentTime()-5);
-              }
-              if(e.code=='ArrowUp'){
-                 g('video').volume+=0.1;
-              }
-              if(e.code=='ArrowDown'){
-                 g('video').volume-=0.1;
-              }
-              if(e.code=='Space'){
-                if(!g('video').paused){
-                  myPlayer.pause();
-                }else{
-                  myPlayer.play();
-                }
-              }
-              if(e.code=='KeyF'){
-                g('video').requestFullScreen();
-              }
-              if(e.code=='ArrowRight'){
-                myPlayer.currentTime(myPlayer.currentTime()+5);
-              }
-        },500);
-      }else{
-          alert('Please specify episode!')
-      }
+          }
+          if(e.code=='KeyF'){
+            g('video').requestFullScreen();
+          }
+          if(e.code=='ArrowRight'){
+            myPlayer.currentTime(myPlayer.currentTime()+5);
+          }
+    },500);
   }else{
       alert('Oops, no episode here!')
   }
