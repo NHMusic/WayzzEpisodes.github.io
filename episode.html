@@ -145,6 +145,34 @@
           'https://video2.miraculousladybug.to/en/576p/%5bS3.Ep13%5d%20Miraculous%20-%20Tales%20of%20Ladybug%20&%20Cat%20Noir%20-%20Mayura%20-%20Heroes\'%20Day%20-%20Part%202',
           'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S00E01.A.Christmas.Special.1080p.NF.WEB-DL.DD5.1.x264'    
   ];
+  var s3=[
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep1%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Chameleon-5-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep2%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Animaestro-6-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep3%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Bakerix-7-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep4%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Backwarder-8-it',
+          'https://video.miraculousladybug.to/de/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%205%20-%20Reflekdoll',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep6%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Weredead-10-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep7%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Silencer-11-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep8%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Oni-Chan-12-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep9%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Miraculer-13-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep10%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Oblivio-1-it',
+          'https://video.miraculousladybug.to/de/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2011%20-%20Desperada',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep12%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Chris%20Master-3-it',
+          'https://video4.miraculousladybug.to/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2013%20-%20Startrain',
+          '',
+          'https://video4.miraculousladybug.to/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2015%20-%20Feast.mp4',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep5%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Gamer%202.0-9-it',
+          'https://video2.miraculousladybug.to/en/576p/Miraculous%20Tales%20Of%20Ladybug%20&%20Cat%20Noir%20-%20S03E17%20Stormy%20Weather%202%20%5bCompressed%5d%201080i%20HDMania',
+          'https://video2.miraculousladybug.to/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2018%20-%20Ikari%20Gozen',
+          'https://video3.miraculousladybug.to/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2019%20-%20Timetagger',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep11%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20Party%20Crasher-2-it',
+          'https://video3.miraculousladybug.to/en/576p/%5bS4.Ep13%5d%20Miraculous,%20Les%20Aventures%20De%20Ladybug%20Et%20Chat%20Noir%20-%20The%20Puppeteer%202-4-it',
+          '',
+          '',
+          'https://video.miraculousladybug.to/de/en/576p/Miraculous%20Ladybug%20-%20Season%203%20Episode%2024%20-%20Ladybug.mp4',
+          '',
+          ''    
+  ];
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
   if(params.has('e')){
@@ -152,6 +180,8 @@
         if(params.get('e').split('|')[0]=='1'){
           g('.video-js').src='https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.'+eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4';
         }else if(params.get('e').split('|')[0]=='2'){
+            g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
+        }else if(params.get('e').split('|')[0]=='3'){
             g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
         }
         var myPlayer = videojs('my_video_1');
