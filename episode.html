@@ -209,9 +209,6 @@
               myPlayer.play();
             }
           }
-          if(e.code=='KeyF'){
-            myPlayer.requestFullscreen();
-          }
           if(e.code=='ArrowRight'){
             myPlayer.currentTime(myPlayer.currentTime()+5);
           }
@@ -219,4 +216,5 @@
   }else{
       alert('Oops, no episode here!')
   }
+  myPlayer.requestFullscreen();
 </script>
