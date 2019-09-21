@@ -187,8 +187,12 @@
       lang=localStorage['MLlanguage'];
   }
   if(params.has('lang')){
-      localStorage['MLlanguage']=params.get('lang');
-      lang=localStorage['MLlanguage'];
+      if(languages.includes(params.get('lang'))){
+        localStorage['MLlanguage']=params.get('lang');
+        lang=localStorage['MLlanguage'];
+      }else{
+        alert('Error: language wasn\'t found in server');
+      }
   }
   g('.video-js').style.fontSize=window.innerWidth/100;
   if(params.has('e')){
