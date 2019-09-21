@@ -180,7 +180,7 @@
   params=new URLSearchParams(window.location.search);
   g('#my_video_1').style.width=window.innerWidth+'px';
   g('#my_video_1').style.height=window.innerHeight+'px';
-  document.addEventListener('resize',function(){
+  document.body.addEventListener('resize',function(){
     g('#my_video_1').style.width=window.innerWidth+'px';
     g('#my_video_1').style.height=window.innerHeight+'px';
   },10);
