@@ -199,11 +199,15 @@
             if(myPlayer.isFullscreen()){
               g('#my_video_1_html5_api').style.width='100%';
               g('#my_video_1_html5_api').style.height='100vh';
+              g('.video-js').style.fontSize=window.innerWidth/100;
             }else{
               g('#my_video_1_html5_api').style.width=window.innerWidth+'px';
               g('#my_video_1_html5_api').style.height=window.innerHeight+'px';
+              if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                  g('.video-js').style.fontSize=window.innerWidth/50;
+              }
             }
-        },20);
+        },500);
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           g('.video-js').style.fontSize=window.innerWidth/50;
            g('video').onclick=function(){
