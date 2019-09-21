@@ -187,6 +187,15 @@
         }
         var myPlayer = videojs('my_video_1');
         setTimeout(function(){g('.vjs-fullscreen-control').click()},500);
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+         g('video').onclick=function(){
+          if(!g('video').paused){
+              myPlayer.pause();
+            }else{
+              myPlayer.play();
+            }
+         }
+        }
         document.body.addEventListener('keydown',function(e){
           console.log(e.code);
           if(e.code=='ArrowLeft'){
