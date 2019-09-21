@@ -160,10 +160,10 @@
        myPlayer.currentTime(myPlayer.currentTime()-5);
     }
     if(e.code=='ArrowUp'){
-       myPlayer.volume+=0.1;
+       g('video').volume+=0.1;
     }
     if(e.code=='ArrowDown'){
-       myPlayer.volume-=0.1;
+       g('video').volume-=0.1;
     }
     if(e.code=='Space'){
       if(myPlayer.playing){
@@ -173,7 +173,7 @@
       }
     }
     if(e.code=='KeyF'){
-      myPlayer.requestFullScreen();
+      g('video').requestFullScreen();
     }
     if(e.code=='ArowRight'){
       myPlayer.currentTime(myPlayer.currentTime()+5);
