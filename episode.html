@@ -178,8 +178,10 @@
   ];
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
-  g('#my_video_1').style.width='100%';
-  g('#my_video_1').style.height='100vh';
+  g('#my_video_1').style.width=window.innerWidth+'px';
+  g('#my_video_1').style.height=window.innerHeight+'px';
+  g('#my_video_1_html5_api').style.width='100%';
+  g('#my_video_1_html5_api').style.height='100vh';
   window.addEventListener("orientationchange", function() {
     window.location.reload();
   });
