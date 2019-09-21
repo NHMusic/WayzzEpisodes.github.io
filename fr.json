@@ -1,24 +1,24 @@
 {
   "s1":{
     "e1":{
-      "id":"drive_1BcGf1oHVzd0XkCPKrMqKbK2K-1XJmbjw",
+      "id":"episode?e=1|1",
       "name":"Climatika", "dur":"22:31",
       "thumb":""
     },
     "e2":{
-      "id":"drive_1CKYWvM9Cn2MEiC9hUtL9ROWKHxqmAJ5T",
+      "id":"episode?e=1|2",
       "name":"Le Bulleur",
       "dur":"21:41",
       "thumb":""
     },
     "e3":{
-      "id":"drive_12CbS2jbWUHUqKVNvAp2BO9R2a_kfKmna",
+      "id":"episode?e=1|3",
       "name":"Le Pharaon",
       "dur":"22:36",
       "thumb":""
     },
     "e4":{
-      "id":"drive_1mO_-D97ydmJr8y8c7bakFJXVCIlEA_gq",
+      "id":"episode?e=1|4",
       "name":"Lady WiFi", "dur":"21:39",
       "thumb":""
     },
