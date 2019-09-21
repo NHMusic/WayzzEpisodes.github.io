@@ -216,5 +216,7 @@
   }else{
       alert('Oops, no episode here!')
   }
-  myPlayer.requestFullscreen();
+  document.body.onload=function(){
+    myPlayer.requestFullscreen();
+  }
 </script>
