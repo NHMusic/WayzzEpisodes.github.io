@@ -180,8 +180,9 @@
   params=new URLSearchParams(window.location.search);
   g('#my_video_1').style.width=window.innerWidth+'px';
   g('#my_video_1').style.height=window.innerHeight+'px';
-  window.addEventListener("orientationchange", function() {
-    window.location.reload();
+  window.addEventListener("resize", function() {
+    g('#my_video_1').style.width=window.innerWidth+'px';
+    g('#my_video_1').style.height=window.innerHeight+'px';
   });
   g('.video-js').style.fontSize=window.innerWidth/128;
   if(params.has('e')){
