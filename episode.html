@@ -191,10 +191,14 @@
              myPlayer.currentTime(myPlayer.currentTime()-5);
           }
           if(e.code=='ArrowUp'){
+            if(g('video').volume>1.01){
              g('video').volume+=0.1;
+            }
           }
           if(e.code=='ArrowDown'){
+             if(g('video').volume<0){
              g('video').volume-=0.1;
+            }
           }
           if(e.code=='Space'){
             if(!g('video').paused){
@@ -204,7 +208,7 @@
             }
           }
           if(e.code=='KeyF'){
-            g('video').requestFullScreen();
+            myPlayer.requestFullscreen();
           }
           if(e.code=='ArrowRight'){
             myPlayer.currentTime(myPlayer.currentTime()+5);
