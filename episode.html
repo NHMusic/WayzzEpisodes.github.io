@@ -156,9 +156,14 @@
   }
   var myPlayer = videojs('my_video_1');
   document.body.addEventListener('keydown',function(e){
-    alert(e.keyCode)
     if(e.keyCode==37){
        myPlayer.currentTime(myPlayer.currentTime()-5);
+    }
+    if(e.keyCode==38){
+       myPlayer+=0.1;
+    }
+    if(e.keyCode==40){
+       myPlayer.volume-=0.1;
     }
     if(e.keyCode==39){
       myPlayer.currentTime(myPlayer.currentTime()+5);
