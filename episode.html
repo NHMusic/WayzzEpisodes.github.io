@@ -166,7 +166,7 @@
        g('video').volume-=0.1;
     }
     if(e.code=='Space'){
-      if(myPlayer.playing){
+      if(!g('video').paused){
         myPlayer.pause();
       }else{
         myPlayer.play();
