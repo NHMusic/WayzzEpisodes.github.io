@@ -21,6 +21,7 @@
     margin-top: 20px;
     background: #222;
     text-align: center; 
+    /*filter:brightness(0.2);*/
     color: #aaa;
     font-family:'Anton',sans-serif;
     background: radial-gradient(#333, hsl(200,30%,6%) );
@@ -86,23 +87,55 @@
 <script src="https://vjs.zencdn.net/5-unsafe/video.js"></script>
 <script>
   var s1=[
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E01.Stormy.Weather.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E02.The.Bubbler.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E07.The.Pharaoh.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E06.Lady.Wifi.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E04.Timebreaker.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E05.Mr.Pigeon.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E09.The.Evillustrator.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E08.Rogercop.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E03.Copycat.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E10.Dark.Cupid.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E11.Horrificator.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E12.Darkblade.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E13.The,Mime.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4',
-          'https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.S01E14.Kung.Food.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4'
+          'S01E01.Stormy.Weather',
+          'S01E02.The.Bubbler',
+          'S01E07.The.Pharaoh',
+          'S01E06.Lady.Wifi',
+          'S01E04.Timebreaker',
+          'S01E05.Mr.Pigeon',
+          'S01E09.The.Evillustrator',
+          'S01E08.Rogercop',
+          'S01E03.Copycat',
+          'S01E10.Dark.Cupid',
+          'S01E11.Horrificator',
+          'S01E12.Darkblade',
+          'S01E13.The.Mime',
+          'S01E19.Kung.Food',
+          'S01E21.Gamer',
+          'S01E17.Animan',
+          'S01E16.Antibug',
+          'S01E20.The.Puppeteer',
+          'S01E18.Reflekta',
+          'S01E22.Pixelator',
+          'S01E23.Guitar.Villain',
+          'S01E25.Princess.Fragrance',
+          'S01E24.Simon.Says',
+          'S01E26.Volpina',
+          'S01E14.Ladybug.and.Cat.Noir.Origins.Part.1',
+          'S01E15.Stoneheart.Origins.Part.2'
+          
+  ];
+  var s2=[
+          'S02E01 - The Collector',
+          'S02E03 - Despair Bear',
+          'S02E02 - Prime Queen',
+          'S02E05 - Befana',
+          'S02E04 - Riposte',
+          'S02E06 - Robostus',
+          'S02E08 - Gigantitan',
+          'S02E07 - The Dark Owl',
+          'S02E09 - Glaciator',
+          'S02E10 - Sapotis',
+          'S02E11 - Gorizilla',
+          'S02E12 - Captain hardrock',
+          'S02E13 - Zombizou',
+          'S02E02 - Prime Queen',
+          
   ];
   var g=function(p){return document.querySelector(p);}
-  try{
-  g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')
-  }catch(err){alert(err)}
+  if(window.location.search.replace('?e=s','')[0]=='1'){
+      g('.video-js').src='https://video2.miraculousladybug.to/en/576p/Miraculous.Tales.of.Ladybug.and.Cat.Noir.'+eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')+'.1080p.NF.WEB-DL.DD5.1.x264-QOQ.mp4';
+  }else if(window.location.search.replace('?e=s','')[0]=='2'){
+      g('.video-js').src='https://video2.miraculousladybug.to/en/576p/Miraculous%20-%20Tales%20of%20Ladybug%20&%20Cat%20Noir%20'+eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')+'.mp4';
+  }
 </script>
