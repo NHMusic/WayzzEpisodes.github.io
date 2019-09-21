@@ -186,13 +186,7 @@
             g('.video-js').src=eval('s'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']')+'.mp4';
         }
         var myPlayer = videojs('my_video_1');
-        document.body.onload=function(){
-          try{
-            myPlayer.requestFullscreen();
-          }catch(err){
-            g('.video').requestFullscreen();
-          }
-        }
+        g('.vjs-fullscreen-control').click()
         document.body.addEventListener('keydown',function(e){
           console.log(e.code);
           if(e.code=='ArrowLeft'){
