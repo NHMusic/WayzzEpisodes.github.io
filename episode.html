@@ -155,7 +155,7 @@
   }
   var myPlayer = videojs('my_video_1');
   document.body.addEventListener('keydown',function(e){
-    alert(e.keyCode);
+    alert(e.code);
     if(e.code=='ArrowLeft'){
        myPlayer.currentTime(myPlayer.currentTime()-5);
     }
