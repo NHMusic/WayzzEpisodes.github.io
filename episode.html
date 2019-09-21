@@ -156,23 +156,24 @@
   }
   var myPlayer = videojs('my_video_1');
   document.body.addEventListener('keydown',function(e){
-    if(e.keyCode==37){
+    alert(e.code);
+    if(e.code=='ArrowLeft'){
        myPlayer.currentTime(myPlayer.currentTime()-5);
     }
-    if(e.keyCode==38){
+    if(e.code=='ArrowUp){
        myPlayer+=0.1;
     }
-    if(e.keyCode==40){
+    if(e.code=='ArrowDown'){
        myPlayer.volume-=0.1;
     }
-    if(e.keyCode==32){
+    if(e.code=='Space'){
       if(myPlayer.playing){
         myPlayer.pause();
       }else{
         myPlayer.play();
       }
     }
-    if(e.keyCode==39){
+    if(e.code=='ArowRight'){
       myPlayer.currentTime(myPlayer.currentTime()+5);
     }
 },500);
