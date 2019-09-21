@@ -180,10 +180,6 @@
   params=new URLSearchParams(window.location.search);
   g('#my_video_1').style.width=window.innerWidth+'px';
   g('#my_video_1').style.height=window.innerHeight+'px';
-  window.addEventListener("resize", function() {
-    g('#my_video_1').style.width=window.innerWidth+'px';
-    g('#my_video_1').style.height=window.innerHeight+'px';
-  });
   g('.video-js').style.fontSize=window.innerWidth/100;
   if(params.has('e')){
       g('.video-js').poster=eval('images'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']');
@@ -196,6 +192,8 @@
         }
         var myPlayer = videojs('my_video_1');
         setInterval(function(){
+            g('#my_video_1').style.width=window.innerWidth+'px';
+            g('#my_video_1').style.height=window.innerHeight+'px';
             if(myPlayer.isFullscreen()){
               g('#my_video_1_html5_api').style.width='100%';
               g('#my_video_1_html5_api').style.height='100vh';
