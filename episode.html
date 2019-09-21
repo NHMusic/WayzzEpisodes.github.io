@@ -192,8 +192,6 @@
         }
         var myPlayer = videojs('my_video_1');
         setInterval(function(){
-            g('#my_video_1').style.width=window.innerWidth+'px';
-            g('#my_video_1').style.height=window.innerHeight+'px';
             if(myPlayer.isFullscreen()){
               g('#my_video_1_html5_api').style.width='100%';
               g('#my_video_1_html5_api').style.height='100vh';
@@ -201,6 +199,8 @@
                   g('.video-js').style.fontSize=window.innerWidth/50;
               }
             }else{
+              g('#my_video_1').style.width=window.innerWidth+'px';
+              g('#my_video_1').style.height=window.innerHeight+'px';
               g('#my_video_1_html5_api').style.width=window.innerWidth+'px';
               g('#my_video_1_html5_api').style.height=window.innerHeight+'px';
               if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
