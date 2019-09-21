@@ -176,18 +176,6 @@
           '',
           ''    
   ];
-  function newButtonToggle () {
-
-      videojs.newButton = videojs.Button.extend({
-         init: function(player, options){
-          videojs.Button.call(this, player, options);
-          this.on('click', this.onClick);
-         }
-      });
-
-      videojs.newButton.prototype.onClick = function() {
-          //Add click routine here..
-      };
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
   var lang='',
