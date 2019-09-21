@@ -191,13 +191,15 @@
              myPlayer.currentTime(myPlayer.currentTime()-5);
           }
           if(e.code=='ArrowUp'){
-            if(g('video').volume>1.01){
+            try{
              g('video').volume+=0.1;
+            }catch(err){
             }
           }
           if(e.code=='ArrowDown'){
-             if(g('video').volume<0){
+             try{
              g('video').volume-=0.1;
+            }catch(err){
             }
           }
           if(e.code=='Space'){
