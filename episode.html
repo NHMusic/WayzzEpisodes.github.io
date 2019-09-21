@@ -172,6 +172,9 @@
         myPlayer.play();
       }
     }
+    if(e.code=='KeyF'){
+      myPlayer.requestFullScreen();
+    }
     if(e.code=='ArowRight'){
       myPlayer.currentTime(myPlayer.currentTime()+5);
     }
