@@ -155,7 +155,7 @@
       g('.video-js').src=eval('s'+window.location.search.replace('?e=s','')[0]+'['+(Number(window.location.search.replace('?e=s'+window.location.search.replace('?e=s','')[0]+'e',''))-1).toString()+']')+'.mp4';
   }
   var myPlayer = videojs('my_video_1');
-  document.body.addEventListener('keypress',function(e){
+  document.body.addEventListener('keydown',function(e){
     alert(e.keyCode)
     if(e.keyCode==37){
        myPlayer.currentTime(myPlayer.currentTime()-5);
