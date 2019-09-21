@@ -178,8 +178,6 @@
   ];
   var g=function(p){return document.querySelector(p);},
   params=new URLSearchParams(window.location.search);
-  g('#my_video_1').style.width=window.innerWidth+'px';
-  g('#my_video_1').style.height=window.innerHeight+'px';
   g('.video-js').style.fontSize=window.innerWidth/100;
   if(params.has('e')){
       g('.video-js').poster=eval('images'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']');
@@ -193,6 +191,8 @@
         var myPlayer = videojs('my_video_1');
         setInterval(function(){
             if(myPlayer.isFullscreen()){
+              g('#my_video_1').style.width='100%';
+              g('#my_video_1').style.height='100vh';
               g('#my_video_1_html5_api').style.width='100%';
               g('#my_video_1_html5_api').style.height='100vh';
               if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
