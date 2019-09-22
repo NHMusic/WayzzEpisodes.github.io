@@ -23,58 +23,113 @@
       "thumb":""
     },
     "e5":{
-      "id":"drive_1FCsnyhLwTNhkCh-yt_ybPJmaGA06jVJE/",
+      "id":"episode?e=1|5",
       "name":"Chronogirl",
       "thumb":""
     },
     "e6":{
-      "id":"drive_1KOnpHgFUFOXGoZlr92sHhhPdEYKuAhqa",
+      "id":"episode?e=1|6",
       "name":"M. Pigeon",
       "thumb":""
     },
     "e7":{
-      "id":"drive_1Ax3Q3AMWhs-Yh0p0XIXJMiL6FYzKiwNZ",
+      "id":"episode?e=1|7",
       "name":"Le Dessinateur",
       "thumb":""
     },
     "e8":{
-      "id":"drive_1ZIpcwYkHo_wnHaWsJjrR5gASU80m-C_w",
+      "id":"episode?e=1|8",
       "name":"Rogercop",
       "thumb":""
     },
     "e9":{
-      "id":"drive_1GHgahk7xa9X7Q2vqC6BKYRbj8TRpAIJP",
+      "id":"episode?e=1|9",
       "name":"L'Imposteur",
       "thumb":""
     },
     "e10":{
-      "id":"drive_1GCW83aYiV5m_C5888Z4Y0sJyC2HUgbas",
+      "id":"episode?e=1|10",
       "name":"Dislocœur",
       "thumb":""
     },
     "e11":{
-      "id":"drive_15jJT6ySiyOZcwJiKo7IKPBHzY11zarMx",
+      "id":"episode?e=1|11",
       "name":"Horrificator",
       "thumb":""
     },
     "e12":{
-      "id":"drive_1A1rp48W34t03nX8fNd5uT6MmV4eDnJrr",
+      "id":"episode?e=1|12",
       "name":"Le Chevalier Noir",
       "thumb":""
     },
     "e13":{
-      "id":"drive_1JNulqX20-08Gt2DDKvQL64E8WOOZJvVb",
+      "id":"episode?e=1|13",
       "name":"Le Mime",
       "thumb":""
     },
     "e14":{
-      "id":"drive_1Xh1-SMADmZ9ytsiMGXG4sZCgCr9Swfis",
+      "id":"episode?e=1|14",
       "name":"Kung Food",
       "thumb":""
     },
     "e15":{
-      "id":"drive_1VEprK2-yPh0EBK0JrOK5P9itYJDyC2VP",
+      "id":"episode?e=1|15",
       "name":"Le Gamer",
+      "thumb":""
+    },
+    "e16":{
+      "id":"episode?e=1|16",
+      "name":"Animan",
+      "thumb":""
+    },
+    "e17":{
+      "id":"episode?e=1|17",
+      "name":"Antibug",
+      "thumb":""
+    },
+    "e18":{
+      "id":"episode?e=1|18",
+      "name":"Le Marionnettiste",
+      "thumb":""
+    },
+    "e19":{
+      "id":"episode?e=1|19",
+      "name":"Reflekta",
+      "thumb":""
+    },
+    "e20":{
+      "id":"episode?e=1|20",
+      "name":"Numéric",
+      "thumb":""
+    },
+    "e21":{
+      "id":"episode?e=1|21",
+      "name":"Guitar Vilain",
+      "thumb":""
+    },
+    "e22":{
+      "id":"episode?e=1|22",
+      "name":"Princesse Fragrance",
+      "thumb":""
+    },
+    "e23":{
+      "id":"episode?e=1|23",
+      "name":"Jackady",
+      "thumb":""
+    },
+    "e24":{
+      "id":"episode?e=1|24",
+      "name":"Volpina",
+      "thumb":""
+    },
+    "e25":{
+      "id":"episode?e=1|25",
+      "name":"Ladybug et Chat Noir (Origines p1)",
+      "thumb":""
+    },
+    "e26":{
+      "id":"episode?e=1|26",
+      "name":"Cœur de pierre (Origines p2)",
       "thumb":""
     }
   }
