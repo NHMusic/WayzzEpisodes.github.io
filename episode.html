@@ -109,6 +109,9 @@
         alert('Error: language wasn\'t found in server');
       }
   }
+  if(lang=='eng'){
+    lang='en';
+  }
   g('.video-js').style.fontSize=window.innerWidth/100;
   if(params.has('e')){
       g('.video-js').poster=eval('images'+params.get('e').split('|')[0]+'['+(Number(params.get('e').split('|')[1])-1).toString()+']');
@@ -116,7 +119,7 @@
         function n(n){
             return n > 9 ? "" + n: "0" + n;
         }
-        g('.video-js').src='https://miraculousladybug.to/global_data/v_connect.php?e='+params.get('e').split('|')[0]+n((Number(params.get('e').split('|')[1])-1))+'&amp;l='+lang
+        g('.video-js').src='https://miraculousladybug.to/global_data/v_connect.php?e='+params.get('e').split('|')[0]+n((Number(params.get('e').split('|')[1])))+'&amp;l='+lang
         var myPlayer = videojs('my_video_1');
         setInterval(function(){
             if(myPlayer.isFullscreen()){
