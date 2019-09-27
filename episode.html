@@ -119,7 +119,7 @@
         function n(n){
             return n > 9 ? "" + n: "0" + n;
         }
-        g('.video-js').src='https://miraculousladybug.to/global_data/v_connect.php?e='+params.get('e').split('|')[0]+n((Number(params.get('e').split('|')[1])))+'&amp;l='+lang
+        g('.video-js').src='https://miraculousladybug.to/global_data/v_connect.php?e='+params.get('e').split('|')[0]+n((Number(params.get('e').split('|')[1])))+'&l='+lang
         var myPlayer = videojs('my_video_1');
         setInterval(function(){
             if(myPlayer.isFullscreen()){
