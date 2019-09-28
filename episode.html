@@ -128,7 +128,7 @@
             return n > 9 ? "" + n: "0" + n;
         }
         if(lang.includes('es')){
-          g('.video-js').src=eval('s'+params.get('e').split('|')[0]+lang+'['+n((Number(params.get('e').split('|')[1])))+']');
+          g('.video-js').src=eval('s'+params.get('e').split('|')[0]+lang+'['+(n((Number(params.get('e').split('|')[1])))-1)+']');
         }else{
             g('.video-js').src='https://miraculousladybug.to/global_data/v_connect.php?e='+params.get('e').split('|')[0]+n((Number(params.get('e').split('|')[1])))+'&l='+lang
         }
