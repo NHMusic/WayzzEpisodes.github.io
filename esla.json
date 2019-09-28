@@ -1,64 +1,62 @@
 {
   "s1":{
     "e1":{
-      "id":"drive_1jQVA2bFigrEA9AIDZxWk3YzO6OtdN3dk",
-      "name":"Clima tempestuoso", "dur":"22:31",
+      "id":"episode?e=1|1",
+      "name":"Clima tempestuoso",
       "thumb":""
     },
     "e2":{
-      "id":"drive_18AJvhLDKQbCsSReJ5hi6OV3tYe241gnP",
+      "id":"episode?e=1|2",
       "name":"Burbujeo",
-      "dur":"21:41",
       "thumb":""
     },
     "e3":{
-      "id":"drive_10giYslfZBezuHdTY8xZHWyy9E3REyqX9",
+      "id":"episode?e=1|3",
       "name":"Faraón",
-      "dur":"22:36",
       "thumb":""
     },
     "e4":{
-      "id":"drive_1GW74mv0flHuyMCl2TGqmiAYPBKks3Qtt",
-      "name":"Lady WiFi", "dur":"21:39",
+      "id":"episode?e=1|4",
+      "name":"Lady WiFi",
       "thumb":""
     },
     "e5":{
-      "id":"drive_1FZl11rOCbTN_WMc4ahI8EsD045qUURTP",
-      "name":"Quiebratiempo", "dur":"20:49",
+      "id":"episode?e=1|5",
+      "name":"Quiebratiempo",
       "thumb":""
     },
     "e6":{
-      "id":"drive_1imOzKrohROkWwf4d7tmX2K8qTloTp1XH",
-      "name":"Mr. Pigeon", "dur":"21:39",
+      "id":"episode?e=1|6",
+      "name":"Mr. Pichón",
       "thumb":""
     },
     "e7":{
-      "id":"drive_1SHhHJyQlVKuOS1kQeQpc7EQcHNpDvuwj",
+      "id":"episode?e=1|7",
       "name":"Demoilustrador",
       "thumb":""
     },
     "e8":{
-      "id":"drive_1S2ZoD4EPG1jq-qiTGB65SAqdsxblwkuU",
+      "id":"episode?e=1|8",
       "name":"Rogercop",
       "thumb":""
     },
     "e9":{
-      "id":"drive_1J-ZBoemiRiJ9PdmfP7XfrDCLHQMerzPC",
+      "id":"episode?e=1|9",
       "name":"Copi-gato",
       "thumb":""
     },
     "e10":{
-      "id":"drive_1CJvcvQ5W5OhyzLCxxkQapMs6U9mNSXbL",
+      "id":"episode?e=1|10",
       "name":"Cupido Negro",
       "thumb":""
     },
     "e11":{
-      "id":"drive_1D2fLtgBLc9-Ir5R5C6Gx8DfjESh-NtoC",
+      "id":"episode?e=1|11",
       "name":"Horrificadora",
       "thumb":""
     },
     "e12":{
-      "id":"drive_1-g4LVJWommphLbM5iqefWhZT7vLvO1YZ",
+      "id":"episode?e=1|12",
       "name":"Darkblade",
       "thumb":""
     }
