@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/plyr.css">
+<style>
+  /* This is purely for the demo */
+body{
+  margin:0;background:black;
+  user-select:none;
+}
+.container {
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+}
+.plyr {
+  border-radius: 4px;
+}
+#player{
+  width:100%;
+}
+</style>
+<div class="container">
+<video controls  poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+                 <!--Video files -->
+                <!--<source src="https://video.miraculousladybug.to/v/en/576p/318.mp4" type="video/mp4" size="1080">-->
+                <source src="https://video.miraculousladybug.to/v/en/576p/318.mp4" type="video/mp4" size="1080">
+
+                 <!--Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://nhnet--nicholashuaman.repl.co/captions.vtt" default>
+                <!--<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">-->
+
+                 <!--Fallback for browsers that don't support the <video> element -->
+                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+            </video>
+</div>
+<script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => { 
+  // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+  const player = new Plyr('#player');
+  function resize(){
+    document.querySelector('#player').style.height=window.innerHeight+'px';
+  }
+  resize();
+  addEventListener('resize',resize,10);
+  // Expose
+  window.player = player;
+
+  // Bind event listener
+  function on(selector, type, callback) {
+    document.querySelector(selector).addEventListener(type, callback, false);
+  }
+
+  // Play
+  on('.js-play', 'click', () => { 
+    player.play();
+  });
+
+  // Pause
+  on('.js-pause', 'click', () => { 
+    player.pause();
+  });
+
+  // Stop
+  on('.js-stop', 'click', () => { 
+    player.stop();
+  });
+
+  // Rewind
+  on('.js-rewind', 'click', () => { 
+    player.rewind();
+  });
+
+  // Forward
+  on('.js-forward', 'click', () => { 
+    player.forward();
+  });
+});
+</script>
